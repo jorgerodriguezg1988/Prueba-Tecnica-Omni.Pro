@@ -4,12 +4,21 @@
   "description": "Prueba Técnica como aspirante al cargo de QA Engineer en Omni.Pro.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clear_report": "npx rimraf ./allure-report",
+    "clear_results": "npx rimraf ./allure-results",
+    "run_test": "npx cypress run --headed --env allure=true",
+    "gen_report": "npx allure generate allure-results -o allure-report --clean", 
+    "open_report": "npx allure open",
+    "full_test": "npm run clear_report && npm run clear_results && npm run run_test && npm run gen_report && npm run open_report"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.13.2"
+  },
+  "dependencies": {
+    "@mmisty/cypress-allure-adapter": "^2.6.2",
+    "allure-commandline": "^2.30.0"
   }
 }
