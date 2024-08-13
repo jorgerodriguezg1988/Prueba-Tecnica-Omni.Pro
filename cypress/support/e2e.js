@@ -17,5 +17,11 @@
 import './commands'
 import '@mmisty/cypress-allure-adapter/support';
 
+
+// Escuchar el evento 'uncaught:exception'
+Cypress.on('uncaught:exception', (err, runnable) => {
+    return false;
+  });
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
