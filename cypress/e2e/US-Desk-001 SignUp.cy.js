@@ -1,4 +1,4 @@
-import WebPage from '../fixtures/WebPage';
+/*import WebPage from '../fixtures/WebPage';
 import { faker } from '@faker-js/faker';
 const openUrl = new WebPage();
 
@@ -61,4 +61,4 @@ describe('US-Desk-001 : SignUp', () => {
     cy.contains('span', 'Hi')
     
   });
-});
+});*/

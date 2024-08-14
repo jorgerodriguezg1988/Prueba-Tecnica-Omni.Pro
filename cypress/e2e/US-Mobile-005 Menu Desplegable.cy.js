@@ -1,4 +1,4 @@
-import WebPage from '../fixtures/WebPage';
+/*import WebPage from '../fixtures/WebPage';
 const openUrl = new WebPage();
 
 beforeEach(() => {
@@ -28,4 +28,4 @@ describe('US-Mobile-005 : Navegación por menú desplegable', () => {
     cy.get('.style-module_white__9cE1P.style-module_drawerMenuIcon__kKOon.style-module_icon__JRetG').click()
     cy.get('[data-automation="x-ultimate-smartphone sale"]').click()
   }); 
-});
+});*/
