@@ -4,6 +4,14 @@
 
 El objetivo de las pruebas en la página de Best Buy Canada (https://www.bestbuy.ca/en-ca) es garantizar la funcionalidad y la usabilidad en diversos escenarios de usuario. Estas pruebas abarcan la simulación de procesos clave como el registro de usuario, la navegación a través de menús desplegables, y la búsqueda de productos. Se verifica la capacidad de interactuar con elementos móviles y la correcta visualización de información en diferentes resoluciones de pantalla. Además, se asegura que las funcionalidades, como la suscripción a boletines y la adición de productos al carrito, funcionen correctamente tanto en escritorio como en dispositivos móviles. Estas pruebas también incluyen la validación de la integración de componentes como el buscador y los filtros de productos. El resultado de las pruebas se evidencia de manera dinámica por medio de la herramienta Allure, que proporciona informes detallados y visualizaciones interactivas de los resultados.
 
+### Repositorio: 
+https://github.com/jorgerodriguezg1988/Prueba-Tecnica-Omni.Pro
+### Reporte Allure Entregable (Descargar y abrir):
+https://github.com/jorgerodriguezg1988/Prueba-Tecnica-Omni.Pro/blob/main/Allure%20Report.html
+
+
+
+
 ## Tecnologías, Herramientas y Patrones de diseño utilizados
 
 Este proyecto de pruebas técnicas se desarrolló utilizando las siguientes herramientas y tecnologías:
@@ -18,7 +26,7 @@ Este proyecto de pruebas técnicas se desarrolló utilizando las siguientes herr
 
 Estas herramientas y prácticas se emplearon para asegurar la cobertura, funcionalidad y mantenibilidad de las pruebas automatizadas.
 
-## Pre-requisitos y Dependiencias:
+## Pre-requisitos y Dependiencias
 - **Editor de codigo fuente**: Cual sea de su preferencia.
 - **NodeJS 20.16.2**: Se debe instalar desde su pagina oficina de acuerdo al sistema operativo del equipo donde se ejecutara el proyecto. (https://nodejs.org/en)
 - **Cypress 13.13.2**: Se instala por medio del comando: 'npm install cypress'
@@ -27,8 +35,36 @@ Estas herramientas y prácticas se emplearon para asegurar la cobertura, funcion
 - **@mmisty/cypress-allure-adapter 2.6.2**: Se instala por medio del comando 'npm i @mmisty/cypress-allure-adapter'
 - **faker-js/faker 8.4.1**: Se instala por medio del comando 'npm i @faker-js/faker'
 
+## Lista de Scripts Cypress para ejecucion secuencial:
 
+NOTA: usando 'npm run (nombre del script negrita)' se ejecutará el comando cypress de manera abreviada o de lo contrario simplemente se pega en la consola de comandos el script completo que esta despues de los dos puntos:
 
+- **`clear_report`**: `npx rimraf ./allure-report`  
+  Este script elimina la carpeta `allure-report`, que contiene los reportes generados anteriormente por Allure. `rimraf` es una herramienta que permite eliminar directorios y sus contenidos de forma segura.
+
+- **`clear_results`**: `npx rimraf ./allure-results`  
+  Este script elimina la carpeta `allure-results`, donde se almacenan los resultados de las pruebas generados por Cypress en formato compatible con Allure. Es útil para limpiar los resultados de pruebas previas antes de ejecutar nuevas pruebas.
+
+- **`run_test`**: `npx cypress run --headed --env allure=true`  
+  Este script ejecuta las pruebas de Cypress en modo "headed", es decir, con una interfaz gráfica visible durante la ejecución. La opción `--env allure=true` habilita la generación de resultados en formato Allure, que se utilizan para la creación de reportes detallados.
+
+- **`gen_report`**: `npx allure generate allure-results -o allure-report --clean`  
+  Este script genera el reporte de Allure a partir de los resultados almacenados en la carpeta `allure-results`. El reporte se guarda en la carpeta `allure-report`, y la opción `--clean` asegura que cualquier reporte previo en la carpeta de destino sea eliminado antes de la generación del nuevo reporte.
+
+- **`gen_report_onefile`**: `npx allure generate --single-file allure-results -o allure-report --clean`  
+  Este script genera un reporte de Allure en un único archivo, en lugar de una estructura de múltiples archivos. La opción `--single-file` indica que el reporte debe ser consolidado en un solo archivo, lo cual puede facilitar la visualización y el manejo del reporte. Al igual que el script anterior, utiliza `--clean` para limpiar los reportes previos.
+
+- **`open_report`**: `npx allure open`  
+  Este script abre el reporte generado por Allure en el navegador predeterminado. Permite visualizar los resultados de las pruebas y los detalles de los reportes de manera interactiva.
+
+- **`full_test`**: `npm run clear_report && npm run clear_results && npm run run_test && npm run gen_report && npm run open_report`  
+  Este script ejecuta una secuencia completa de pruebas y generación de reportes.
+
+  EJEMPLO (son el mismo comando):
+  - npm run full_test
+  - npm run clear_report && npm run clear_results && npm run run_test && npm run gen_report && npm run open_report
+  
+  
 
 # Casos de prueba
 
