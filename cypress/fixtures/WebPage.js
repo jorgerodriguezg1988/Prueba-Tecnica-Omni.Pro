@@ -3,6 +3,16 @@ class WebPage {
       cy.visit("/")
       //cy.wait(3000)
     }
+
+    
+    
+
+
+
+
+
+
+
   }
   
   export default WebPage;

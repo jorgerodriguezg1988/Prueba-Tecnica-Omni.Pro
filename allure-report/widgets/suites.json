@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"5ca5bdec46c8ef6655f6fd5593eb531c","name":"US-Desk-001 : SignUp","statistic":{"failed":0,"broken":0,"skipped":0,"passed":8,"unknown":0,"total":8}}]}
+{"total":2,"items":[{"uid":"5ca5bdec46c8ef6655f6fd5593eb531c","name":"US-Desk-001 : SignUp","statistic":{"failed":0,"broken":0,"skipped":0,"passed":8,"unknown":0,"total":8}},{"uid":"f3170384d61882d574c667106f0c6a16","name":"US-Desk-002 : Simulación de compra de un celular","statistic":{"failed":0,"broken":0,"skipped":0,"passed":7,"unknown":0,"total":7}}]}

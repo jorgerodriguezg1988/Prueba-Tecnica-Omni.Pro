@@ -59,6 +59,9 @@ describe('US-Desk-001 : SignUp', () => {
   it('US-Desk-001 : SignUp | TC-008: Bienvenida', () => {
     //cy.get('._13V0r').should('be.visible')
     cy.contains('span', 'Hi')
+    
   });
+
+  
 
 });
