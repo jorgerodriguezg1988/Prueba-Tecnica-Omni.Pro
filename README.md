@@ -4,6 +4,32 @@
 
 El objetivo de las pruebas en la página de Best Buy Canada (https://www.bestbuy.ca/en-ca) es garantizar la funcionalidad y la usabilidad en diversos escenarios de usuario. Estas pruebas abarcan la simulación de procesos clave como el registro de usuario, la navegación a través de menús desplegables, y la búsqueda de productos. Se verifica la capacidad de interactuar con elementos móviles y la correcta visualización de información en diferentes resoluciones de pantalla. Además, se asegura que las funcionalidades, como la suscripción a boletines y la adición de productos al carrito, funcionen correctamente tanto en escritorio como en dispositivos móviles. Estas pruebas también incluyen la validación de la integración de componentes como el buscador y los filtros de productos. El resultado de las pruebas se evidencia de manera dinámica por medio de la herramienta Allure, que proporciona informes detallados y visualizaciones interactivas de los resultados.
 
+## Tecnologías, Herramientas y Patrones de diseño utilizados
+
+Este proyecto de pruebas técnicas se desarrolló utilizando las siguientes herramientas y tecnologías:
+
+- **Cypress**: Herramienta de pruebas de integración y extremo a extremo para aplicaciones web.
+- **Node.js**: Entorno de ejecución para JavaScript en el servidor.
+- **JavaScript**: Lenguaje de programación utilizado para escribir las pruebas y scripts.
+- **VSCode**: Editor de código utilizado para el desarrollo.
+- **GitHub**: Plataforma de alojamiento de código fuente y control de versiones que facilita la colaboración en proyectos de software.
+- **Allure**: Herramienta de generación de informes que proporciona una vista detallada y dinámica de los resultados de las pruebas automatizadas.
+- **Page Object Model (POM)**: Patrón de diseño utilizado para estructurar el código de prueba de manera eficiente y mantenible.
+
+Estas herramientas y prácticas se emplearon para asegurar la cobertura, funcionalidad y mantenibilidad de las pruebas automatizadas.
+
+## Pre-requisitos y Dependiencias:
+- **Editor de codigo fuente**: Cual sea de su preferencia.
+- **NodeJS 20.16.2**: Se debe instalar desde su pagina oficina de acuerdo al sistema operativo del equipo donde se ejecutara el proyecto. (https://nodejs.org/en)
+- **Cypress 13.13.2**: Se instala por medio del comando: 'npm install cypress'
+- **JAVA_PATH**: Descargar JDK 22 desde su pagina oficial y configurar el JAVA_PATH para el funcionamiento de los reportes Allure.
+- **Allure-commandline 2.30.0**: Se instala por medio del comando 'npm i allure-commandline'
+- **@mmisty/cypress-allure-adapter 2.6.2**: Se instala por medio del comando 'npm i @mmisty/cypress-allure-adapter'
+- **faker-js/faker 8.4.1**: Se instala por medio del comando 'npm i @faker-js/faker'
+
+
+
+
 # Casos de prueba
 
 
