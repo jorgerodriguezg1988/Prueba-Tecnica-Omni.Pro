@@ -59,18 +59,5 @@ describe('US-Mobile-004 : SignUp', () => {
 
   it('US-Mobile-004 : SignUp | TC-008: Bienvenida', () => {
     cy.get('[data-automation="account-title"]').should('contain.text', 'Welcome');
-  });
-
-  
-
-  
-
-
-
-
-  
-
-
-
-  
+  }); 
 });
