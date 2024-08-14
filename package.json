@@ -7,7 +7,8 @@
     "clear_report": "npx rimraf ./allure-report",
     "clear_results": "npx rimraf ./allure-results",
     "run_test": "npx cypress run --headed --env allure=true",
-    "gen_report": "npx allure generate allure-results -o allure-report --clean",
+    "gen_report": "npx allure generate allure-results -o allure-report --clean",//directorio
+    "gen_report_onefile": "npx allure generate --single-file allure-results -o allure-report --clean",//onefile
     "open_report": "npx allure open",
     "full_test": "npm run clear_report && npm run clear_results && npm run run_test && npm run gen_report && npm run open_report"
   },
