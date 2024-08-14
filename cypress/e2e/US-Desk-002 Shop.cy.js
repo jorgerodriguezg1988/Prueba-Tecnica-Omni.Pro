@@ -1,4 +1,4 @@
-/*import WebPage from '../fixtures/WebPage';
+import WebPage from '../fixtures/WebPage';
 const openUrl = new WebPage();
 
 beforeEach(() => {
@@ -46,4 +46,4 @@ beforeEach(() => {
       cy.wait(10000)
       //Carrito de compras restringido para pruebas de automatización.
     });
-});*/
+});

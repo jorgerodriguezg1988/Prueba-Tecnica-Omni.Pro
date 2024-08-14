@@ -1,4 +1,4 @@
-/*import WebPage from '../fixtures/WebPage';
+import WebPage from '../fixtures/WebPage';
 import { faker } from '@faker-js/faker';
 const openUrl = new WebPage();
 
@@ -60,4 +60,4 @@ describe('US-Mobile-004 : SignUp', () => {
   it('US-Mobile-004 : SignUp | TC-008: Bienvenida', () => {
     cy.get('[data-automation="account-title"]').should('contain.text', 'Welcome');
   }); 
-});*/
+});

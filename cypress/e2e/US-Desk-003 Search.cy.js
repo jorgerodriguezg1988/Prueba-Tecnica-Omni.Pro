@@ -1,4 +1,4 @@
-/*import WebPage from '../fixtures/WebPage';
+import WebPage from '../fixtures/WebPage';
 const openUrl = new WebPage();
 
 beforeEach(() => {
@@ -37,4 +37,4 @@ beforeEach(() => {
       cy.get('.x-crumb').should('contain', 'Windows');
 
     });
-});*/
+});
