@@ -61,7 +61,4 @@ describe('US-Desk-001 : SignUp', () => {
     cy.contains('span', 'Hi')
     
   });
-
-  
-
 });

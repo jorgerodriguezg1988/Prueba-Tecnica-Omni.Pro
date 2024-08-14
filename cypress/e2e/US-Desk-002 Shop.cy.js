@@ -1,6 +1,5 @@
 import WebPage from '../fixtures/WebPage';
 const openUrl = new WebPage();
-const firstSteps = new WebPage();
 
 beforeEach(() => {
     cy.viewport(1500, 900);
@@ -47,13 +46,4 @@ beforeEach(() => {
       cy.wait(10000)
       //Carrito de compras restringido para pruebas de automatización.
     });
-
-    
-
-    
-
-
-
-    
-
 });
